@@ -28,6 +28,10 @@ struct ContentView: View {
                 VStack{
                     Spacer().frame(height:20)
                     
+                    Text("Drag & Drop Image Here")
+                        .font(.title)
+                        .foregroundColor(Color.gray)
+                    
                     // 图片显示
                     Image(nsImage: store.appState.displayimage)
                         .resizable()
